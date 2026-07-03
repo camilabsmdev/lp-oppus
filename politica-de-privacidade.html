@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidade | ÓPPUS Advocacia e Consultoria Empresarial</title>
+    <meta name="description" content="Política de Privacidade da ÓPPUS Advocacia e Consultoria Empresarial. Saiba como coletamos, usamos e protegemos suas informações pessoais.">
+    <meta name="robots" content="noindex, follow">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --gold:       #C5A059;
+            --gold-light: #D9BB7A;
+            --navy:       #1E2A44;
+            --navy-deep:  #141D30;
+            --dark-blue:  #2A3B5A;
+            --off-white:  #EAEAEA;
+            --white:      #FFFFFF;
+            --text-muted: #555566;
+            --font-heading: 'Playfair Display', Georgia, serif;
+            --font-body:    'Montserrat', sans-serif;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--navy-deep);
+            color: var(--off-white);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ── Header ─────────────────────────────────────── */
+        .pp-header {
+            background: var(--navy);
+            border-bottom: 1px solid rgba(197, 160, 89, 0.2);
+            padding: 28px 0;
+        }
+        .pp-header .inner {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+        .pp-header img {
+            width: 100px;
+        }
+        .pp-header-back {
+            margin-left: auto;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--gold);
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: opacity 0.2s;
+        }
+        .pp-header-back:hover { opacity: 0.7; }
+
+        /* ── Hero ───────────────────────────────────────── */
+        .pp-hero {
+            background: linear-gradient(135deg, var(--navy) 0%, var(--dark-blue) 100%);
+            padding: 72px 24px;
+            text-align: center;
+            border-bottom: 1px solid rgba(197, 160, 89, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        .pp-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse at center, rgba(197,160,89,0.06) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        .pp-eyebrow {
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 16px;
+        }
+        .pp-title {
+            font-family: var(--font-heading);
+            font-size: clamp(1.8rem, 4vw, 2.8rem);
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 12px;
+        }
+        .pp-date {
+            font-size: 0.82rem;
+            color: rgba(234, 234, 234, 0.5);
+            letter-spacing: 1px;
+        }
+        .pp-divider {
+            width: 60px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--gold), transparent);
+            margin: 20px auto;
+        }
+
+        /* ── Content ─────────────────────────────────────── */
+        .pp-content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 64px 24px 96px;
+        }
+
+        .pp-section {
+            margin-bottom: 48px;
+        }
+
+        .pp-section-title {
+            font-family: var(--font-heading);
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--gold-light);
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid rgba(197, 160, 89, 0.15);
+        }
+
+        .pp-text {
+            font-size: 0.95rem;
+            line-height: 1.85;
+            color: rgba(234, 234, 234, 0.75);
+            margin-bottom: 16px;
+        }
+
+        .pp-list {
+            list-style: none;
+            margin: 12px 0 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .pp-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            font-size: 0.93rem;
+            color: rgba(234, 234, 234, 0.75);
+            line-height: 1.7;
+        }
+        .pp-list li::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            background: var(--gold);
+            border-radius: 50%;
+            flex-shrink: 0;
+            margin-top: 8px;
+        }
+
+        .pp-highlight {
+            background: rgba(197, 160, 89, 0.07);
+            border-left: 3px solid var(--gold);
+            border-radius: 0 8px 8px 0;
+            padding: 20px 24px;
+            margin: 24px 0;
+            font-size: 0.93rem;
+            color: rgba(234, 234, 234, 0.8);
+            line-height: 1.8;
+        }
+
+        strong { color: var(--gold-light); font-weight: 600; }
+
+        /* ── Contact Block ─────────────────────────────── */
+        .pp-contact-block {
+            background: rgba(42, 59, 90, 0.4);
+            border: 1px solid rgba(197, 160, 89, 0.2);
+            border-radius: 12px;
+            padding: 32px;
+            margin-top: 16px;
+        }
+        .pp-contact-block p {
+            font-size: 0.9rem;
+            color: rgba(234, 234, 234, 0.7);
+            margin-bottom: 8px;
+        }
+        .pp-contact-block a {
+            color: var(--gold-light);
+            text-decoration: none;
+        }
+        .pp-contact-block a:hover { text-decoration: underline; }
+
+        /* ── Footer ─────────────────────────────────────── */
+        .pp-footer {
+            background: var(--navy);
+            border-top: 1px solid rgba(197, 160, 89, 0.1);
+            padding: 24px;
+            text-align: center;
+        }
+        .pp-footer p {
+            font-size: 0.78rem;
+            color: rgba(234, 234, 234, 0.3);
+        }
+        .pp-footer a {
+            color: var(--gold);
+            text-decoration: none;
+        }
+        .pp-footer a:hover { text-decoration: underline; }
+
+        @media (max-width: 640px) {
+            .pp-hero { padding: 48px 20px; }
+            .pp-content { padding: 40px 20px 64px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="pp-header">
+        <div class="inner">
+            <img src="assets/logo-gold.png" alt="ÓPPUS Advocacia">
+            <a href="index.html" class="pp-header-back">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+                </svg>
+                Voltar ao site
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="pp-hero">
+        <p class="pp-eyebrow">Documentos Legais</p>
+        <h1 class="pp-title">Política de Privacidade</h1>
+        <div class="pp-divider"></div>
+        <p class="pp-date">Última atualização: 03 de Julho de 2026</p>
+    </section>
+
+    <!-- Content -->
+    <main class="pp-content">
+
+        <div class="pp-section">
+            <p class="pp-text">
+                Sua privacidade é importante para nós. Esta Política de Privacidade descreve como coletamos, usamos, armazenamos e protegemos as informações pessoais que você nos fornece ao acessar nossa landing page e outros serviços relacionados.
+            </p>
+        </div>
+
+        <!-- 1. Coleta de Informações -->
+        <div class="pp-section">
+            <h2 class="pp-section-title">1. Coleta de Informações</h2>
+            <p class="pp-text">Ao visitar nossa landing page e preencher os formulários disponíveis, podemos coletar as seguintes informações pessoais:</p>
+            <ul class="pp-list">
+                <li><strong>Informações Pessoais Identificáveis:</strong> Nome, endereço de e-mail, telefone e qualquer outro dado que você nos forneça diretamente.</li>
+                <li><strong>Dados de Navegação:</strong> Informações sobre sua navegação em nosso site, como endereços IP, cookies, páginas visitadas, tempo de permanência, etc.</li>
+                <li><strong>Informações de Pagamento (se aplicável):</strong> Dados de pagamento podem ser coletados caso a landing page envolva transações comerciais.</li>
+            </ul>
+            <p class="pp-text">Esses dados são coletados por meio de formulários e cookies para oferecer uma melhor experiência ao usuário e para comunicação direta.</p>
+        </div>
+
+        <!-- 2. Uso das Informações -->
+        <div class="pp-section">
+            <h2 class="pp-section-title">2. Uso das Informações</h2>
+            <p class="pp-text">As informações coletadas podem ser utilizadas para os seguintes fins:</p>
+            <ul class="pp-list">
+                <li><strong>Melhorar a experiência do usuário:</strong> Personalizar o conteúdo da landing page e fornecer materiais relevantes.</li>
+                <li><strong>Comunicação:</strong> Enviar atualizações, ofertas, newsletters e outros conteúdos relacionados ao seu interesse.</li>
+                <li><strong>Análise de dados:</strong> Analisar o tráfego do site, melhorar o desempenho da página e otimizar nossas ofertas.</li>
+                <li><strong>Realização de transações (se aplicável):</strong> Processar compras e pagamentos, bem como fornecer suporte ao cliente.</li>
+            </ul>
+        </div>
+
+        <!-- 3. Compartilhamento de Informações -->
+        <div class="pp-section">
+            <h2 class="pp-section-title">3. Compartilhamento de Informações</h2>
+            <p class="pp-text">Nós não venderemos, alugaremos ou compartilharemos suas informações pessoais com terceiros, exceto nas seguintes circunstâncias:</p>
+            <ul class="pp-list">
+                <li><strong>Parceiros de negócios e fornecedores de serviços:</strong> Podemos compartilhar informações com empresas que prestam serviços em nosso nome, como provedores de hospedagem e ferramentas de análise.</li>
+                <li><strong>Cumprimento de obrigações legais:</strong> Podemos compartilhar dados se exigido por lei ou para responder a processos legais, como ordens judiciais ou solicitações de autoridades competentes.</li>
+                <li><strong>Transferência de ativos:</strong> Em caso de fusão, venda ou reorganização, suas informações poderão ser transferidas para a nova entidade.</li>
+            </ul>
+        </div>
+
+        <!-- 4. Cookies e Tecnologias de Rastreamento -->
+        <div class="pp-section">
+            <h2 class="pp-section-title">4. Cookies e Tecnologias de Rastreamento</h2>
+            <p class="pp-text">Utilizamos cookies e tecnologias de rastreamento para melhorar a experiência do usuário e analisar o tráfego da página. Os cookies são pequenos arquivos armazenados no seu dispositivo que nos ajudam a entender suas preferências e otimizar a funcionalidade da landing page.</p>
+            <div class="pp-highlight">
+                Você pode configurar seu navegador para recusar cookies, mas isso pode afetar algumas funcionalidades do site.
+            </div>
+        </div>
+
+        <!-- 5. Armazenamento e Segurança dos Dados -->
+        <div class="pp-section">
+            <h2 class="pp-section-title">5. Armazenamento e Segurança dos Dados</h2>
+            <p class="pp-text">Nos comprometemos a proteger suas informações pessoais com medidas de segurança adequadas, incluindo criptografia e acesso restrito aos dados.</p>
+            <div class="pp-highlight">
+                No entanto, nenhuma forma de transmissão de dados pela internet é 100% segura, por isso não podemos garantir a segurança absoluta de suas informações.
+            </div>
+        </div>
+
+        <!-- 6. Seus Direitos -->
+        <div class="pp-section">
+            <h2 class="pp-section-title">6. Seus Direitos</h2>
+            <p class="pp-text">De acordo com as leis de privacidade aplicáveis, incluindo a Lei Geral de Proteção de Dados (LGPD – Lei nº 13.709/2018), você tem os seguintes direitos sobre suas informações pessoais:</p>
+            <ul class="pp-list">
+                <li><strong>Acesso e Correção:</strong> Você pode acessar suas informações pessoais e solicitar correções, caso haja erros.</li>
+                <li><strong>Exclusão:</strong> Você pode solicitar a exclusão de suas informações, desde que não haja motivos legais para mantê-las.</li>
+                <li><strong>Oposição e Restrição:</strong> Você pode se opor ao processamento de seus dados ou solicitar restrições em determinados usos, em conformidade com a legislação aplicável.</li>
+                <li><strong>Retirada do Consentimento:</strong> Se o processamento dos dados for baseado em consentimento, você pode revogar esse consentimento a qualquer momento.</li>
+            </ul>
+            <p class="pp-text">Para exercer qualquer um desses direitos, entre em contato conosco por meio das informações abaixo.</p>
+        </div>
+
+        <!-- 7. Alterações nesta Política -->
+        <div class="pp-section">
+            <h2 class="pp-section-title">7. Alterações nesta Política de Privacidade</h2>
+            <p class="pp-text">Podemos atualizar esta Política de Privacidade de tempos em tempos para refletir alterações nas nossas práticas ou por outros motivos operacionais, legais ou regulatórios. Quaisquer alterações serão publicadas nesta página com a data de atualização.</p>
+        </div>
+
+        <!-- 8. Contato -->
+        <div class="pp-section">
+            <h2 class="pp-section-title">8. Contato</h2>
+            <p class="pp-text">Se você tiver qualquer dúvida sobre esta Política de Privacidade ou sobre como tratamos suas informações pessoais, entre em contato conosco:</p>
+            <div class="pp-contact-block">
+                <p><strong>E-mail:</strong> <a href="mailto:samuelstefersonadv@gmail.com">samuelstefersonadv@gmail.com</a></p>
+                <p><strong>Telefone:</strong> <a href="https://api.whatsapp.com/send?phone=5531993408465&text=Olá,%20vim%20pelo%20Google%20e%20gostaria%20de%20falar%20com%20um%20advogado" target="_blank" rel="noopener">(31) 99340 8465</a></p>
+                <p><strong>Endereço:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Rua+Perobas,+561,+Colonial,+Contagem+-+MG" target="_blank" rel="noopener">Rua Perobas, 561, Colonial, Contagem – MG</a></p>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="pp-footer">
+        <p>© 2026 ÓPPUS Advocacia e Consultoria. | <a href="index.html">Voltar à Landing Page</a></p>
+    </footer>
+
+</body>
+</html>
